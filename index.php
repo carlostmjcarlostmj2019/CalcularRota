@@ -115,7 +115,7 @@ include("functions.php");
                         $cepInicial = "21320-190";
                         $cepFinal = $_POST['cepFinal'];
                         $cupom = isset($_POST['cupom']) ? $_POST['cupom'] : null;
-                        $apiKey = "AIzaSyDF6asyOBYn7DG2pop5RrBO89pJ7Jmz42Y";
+                        $apiKey = "SUA API";
 
                         $distancia = calcularDistancia($cepInicial, $cepFinal, $apiKey);
                         $valorTaxa = calcularTaxa($distancia, $cupom);
