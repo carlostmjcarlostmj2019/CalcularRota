@@ -1,18 +1,25 @@
-Calculadora de Rota em PHP
-Este código em PHP foi desenvolvido para calcular rotas com base em CEPs, utilizando a API do Google Maps Geocoding. Ele também inclui funcionalidades para calcular a taxa da rota, considerando valores como preço por quilômetro, preço mínimo por rota, entre outros. O código foi inicialmente criado com a assistência do ChatGPT e está aberto a contribuições para melhorias.
+<h1>Calculadora de Rotas em PHP</h1>
 
-Uso
-Configuração da API Key do Google Maps:
-Antes de usar este código, substitua 'SUA_API_KEY' pelo valor da sua chave de API do Google Maps na chamada da função obterCoordenadasPorCEP.
+<p>Este código em PHP foi desenvolvido para calcular rotas com base em CEPs, utilizando a API do Google Maps Geocoding. Ele também inclui funcionalidades para calcular a taxa da rota, considerando valores como preço por quilômetro, preço mínimo por rota, entre outros. O código foi inicialmente criado com a assistência do ChatGPT e está aberto a contribuições para melhorias.</p>
 
-Variáveis de Configuração:
-No código, você encontrará variáveis relacionadas ao cálculo da taxa, como valorPorKM, valorMinimoPorRota, e distanciaMinimaParaCobranca. Certifique-se de ajustar esses valores de acordo com os requisitos do seu sistema.
+<h2>Uso</h2>
 
-Exemplo de Uso:
+<ol>
+    <li><strong>Configuração da Chave da API do Google Maps:</strong><br>
+        Antes de usar este código, substitua <code>'SUA_CHAVE_API'</code> pelo valor da sua chave de API do Google Maps na chamada da função <code>obterCoordenadasPorCEP</code>.</li>
+
+    <li><strong>Variáveis de Configuração:</strong><br>
+        No código, você encontrará variáveis relacionadas ao cálculo da taxa, como <code>valorPorKM</code>, <code>valorMinimoPorRota</code>, e <code>distanciaMinimaParaCobranca</code>. Certifique-se de ajustar esses valores de acordo com os requisitos do seu sistema.</li>
+
+    <li><strong>Exemplo de Uso:</strong><br>
+        </li>
+</ol>
+
+<pre>
 <code>
 $cepInicial = 'CEP_INICIAL';
 $cepFinal = 'CEP_FINAL';
-$apiKey = 'SUA_API_KEY';
+$apiKey = 'SUA_CHAVE_API';
 
 // Calcular a distância entre os CEPs
 $distanciaKm = calcularDistancia($cepInicial, $cepFinal, $apiKey);
@@ -23,21 +30,33 @@ $taxaDaRota = calcularTaxa($distanciaKm);
 // Exibir o resultado
 echo "Distância: {$distanciaKm} km\n";
 echo "Taxa da Rota: R$ {$taxaDaRota}\n";
-Funções Disponíveis:
-
-calcularDistancia($cepInicial, $cepFinal, $apiKey): Calcula a distância em quilômetros entre dois CEPs.
-obterCoordenadasPorCEP($cep, $apiKey): Obtém as coordenadas geográficas a partir de um CEP.
-calcularTaxa($distancia): Calcula a taxa da rota com base na distância em quilômetros.
 </code>
+</pre>
 
+<ol start="4">
+    <li><strong>Funções Disponíveis:</strong><br>
+        <ul>
+            <li><code>calcularDistancia($cepInicial, $cepFinal, $apiKey)</code>: Calcula a distância em quilômetros entre dois CEPs.</li>
+            <li><code>obterCoordenadasPorCEP($cep, $apiKey)</code>: Obtém as coordenadas geográficas a partir de um CEP.</li>
+            <li><code>calcularTaxa($distancia)</code>: Calcula a taxa da rota com base na distância em quilômetros.</li>
+        </ul>
+    </li>
 
-Observações:
+    <li><strong>Observações:</strong><br>
+        <ul>
+            <li>Este código utiliza a API do Google Maps Geocoding, então é necessário ter uma chave de API válida.</li>
+            <li>As variáveis de configuração como <code>valorPorKM</code>, <code>valorMinimoPorRota</code>, e <code>distanciaMinimaParaCobranca</code> devem ser ajustadas conforme a política de preços do serviço.</li>
+        </ul>
+    </li>
 
-Este código utiliza a API do Google Maps Geocoding, então é necessário ter uma chave de API válida.
-As variáveis de configuração como valorPorKM, valorMinimoPorRota, e distanciaMinimaParaCobranca devem ser ajustadas conforme a política de preços do serviço.
-Contribuições e Melhorias:
-Este código está aberto a contribuições. Caso tenha sugestões de melhorias ou soluções, sinta-se à vontade para enviar suas alterações.
+    <li><strong>Contribuições e Melhorias:</strong><br>
+        Este código está aberto a contribuições. Caso tenha sugestões de melhorias ou soluções, sinta-se à vontade para enviar suas alterações.
+    </li>
+</ol>
 
-Lembre-se de substituir 'SUA_API_KEY', 'CEP_INICIAL', e 'CEP_FINAL' pelos valores reais que deseja utilizar.
+<p>Lembre-se de substituir <code>'SUA_CHAVE_API'</code>, <code>'CEP_INICIAL'</code>, <code>'CEP_FINAL'</code> pelos valores reais que deseja utilizar.</p>
 
-Espero que este código seja útil, e da mesma forma que ajudou você, espero que ajude outros desenvolvedores. Caso tenha alguma dúvida ou sugestão, não hesite em entrar em contato!
+<p>Espero que este código seja útil, e da mesma forma que ajudou você, espero que ajude outros desenvolvedores. Caso tenha alguma dúvida ou sugestão, não hesite em entrar em contato!</p>
+
+</body>
+</html>
