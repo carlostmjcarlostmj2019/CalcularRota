@@ -29,27 +29,24 @@ echo "Distância: {$distanciaKm} km\n";
 echo "Taxa da Rota: R$ {$taxaDaRota}\n";
 </code>
 </pre>
-
-<ol start="4">
-    <li><strong>Funções Disponíveis:</strong><br>
+<h4>Funções Disponíveis:</h4><br>
         <ul>
             <li><code>calcularDistancia($cepInicial, $cepFinal, $apiKey)</code>: Calcula a distância em quilômetros entre dois CEPs.</li>
             <li><code>obterCoordenadasPorCEP($cep, $apiKey)</code>: Obtém as coordenadas geográficas a partir de um CEP.</li>
             <li><code>calcularTaxa($distancia)</code>: Calcula a taxa da rota com base na distância em quilômetros.</li>
         </ul>
-    </li>
-
-    <li><strong>Observações:</strong><br>
+    
+<h4>Observações:</h4><br>
         <ul>
             <li>Este código utiliza a API do Google Maps Geocoding, então é necessário ter uma chave de API válida.</li>
             <li>As variáveis de configuração como <code>valorPorKM</code>, <code>valorMinimoPorRota</code>, e <code>distanciaMinimaParaCobranca</code> devem ser ajustadas conforme a política de preços do serviço.</li>
         </ul>
-    </li>
 
-    <li><strong>Contribuições e Melhorias:</strong><br>
-        Este código está aberto a contribuições. Caso tenha sugestões de melhorias ou soluções, sinta-se à vontade para enviar suas alterações.
-    </li>
-</ol>
+
+<h4>Contribuições e Melhorias:</h4><br>
+       <p> Este código está aberto a contribuições. Caso tenha sugestões de melhorias ou soluções, sinta-se à vontade para enviar suas alterações.</p>
+  
+
 
 <p>Lembre-se de substituir <code>'SUA_CHAVE_API'</code>, <code>'CEP_INICIAL'</code>, <code>'CEP_FINAL'</code> pelos valores reais que deseja utilizar.</p>
 
