@@ -4,16 +4,13 @@
 
 <h2>Uso</h2>
 
-<ol>
-    <li><strong>Configuração da Chave da API do Google Maps:</strong><br>
-        Antes de usar este código, substitua <code>'SUA_CHAVE_API'</code> pelo valor da sua chave de API do Google Maps na chamada da função <code>obterCoordenadasPorCEP</code>.</li>
+<h4>Configuração da Chave da API do Google Maps:</h4>
+<p> usar este código, substitua <code>'SUA_CHAVE_API'</code> pelo valor da sua chave de API do Google Maps na chamada da função <code>obterCoordenadasPorCEP</code>.</p>
+<h4>Variáveis de Configuração:</h4>
+       <p> No código, você encontrará variáveis relacionadas ao cálculo da taxa, como <code>valorPorKM</code>, <code>valorMinimoPorRota</code>, e <code>distanciaMinimaParaCobranca</code>. Certifique-se de ajustar esses valores de acordo com os requisitos do seu sistema.</p>
 
-    <li><strong>Variáveis de Configuração:</strong><br>
-        No código, você encontrará variáveis relacionadas ao cálculo da taxa, como <code>valorPorKM</code>, <code>valorMinimoPorRota</code>, e <code>distanciaMinimaParaCobranca</code>. Certifique-se de ajustar esses valores de acordo com os requisitos do seu sistema.</li>
-
-    <li><strong>Exemplo de Uso:</strong><br>
-        </li>
-</ol>
+<h4>Exemplo de Uso:</h4><br>
+        
 
 <pre>
 <code>
